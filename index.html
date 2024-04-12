@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/css/export.css">
+    <link rel="stylesheet" href="src/fontello-57653eed/css/fontello.css">
+</head>
+<body>
+    <main class="w-full 2xl:container mx-auto">
+      <header class="row justify-center" style="background: rgb(235,239,255);background: linear-gradient(90deg, rgba(235,239,255,1) 0%, rgba(235,239,255,1) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);">
+        <div class="row lg:w-[80%] bg-black lg:bg-inherit items-center h-[70px]" >
+           <div class="w-2/4 lg:w-1/4 p-4">
+          <a class="font-bold  text-3xl row  text-white lg:text-black" href=""><span class="text-white bg-blue-600 flex justify-center w-[40px] h-[40px] rounded-[50%]">N</span>asim</a>
+           </div>
+           <div class="hidden lg:flex lg:w-3/4">
+            <nav class="w-full">
+                <ul class="row p-3 justify-center *:text-xl">
+                    <li class="mx-4 p-1 relative after:left-[50%] after:hover:left-0 after:bottom-0 after:absolute after:bg-blue-600 after:w-0 after:h-[2px] after:hover:w-full after:transition-all after:duration-[.4] transition-all duration-[.4] "><a href="#">Home </a></li>
+                    <li class="mx-4 p-1 relative after:left-[50%] after:hover:left-0 after:bottom-0 after:absolute after:bg-blue-600 after:w-0 after:h-[2px] after:hover:w-full after:transition-all after:duration-[.4] transition-all duration-[.4] "><a href="#about">About</a></li>
+                    <li class="mx-4 p-1 relative after:left-[50%] after:hover:left-0 after:bottom-0 after:absolute after:bg-blue-600 after:w-0 after:h-[2px] after:hover:w-full after:transition-all after:duration-[.4] transition-all duration-[.4] "><a href="#resume">Resume</a></li>
+                    <li class="mx-4 p-1 relative after:left-[50%] after:hover:left-0 after:bottom-0 after:absolute after:bg-blue-600 after:w-0 after:h-[2px] after:hover:w-full after:transition-all after:duration-[.4] transition-all duration-[.4] "><a href="#project">Projects</a></li>
+                    <li class="mx-4 p-1 relative after:left-[50%] after:hover:left-0 after:bottom-0 after:absolute after:bg-blue-600 after:w-0 after:h-[2px] after:hover:w-full after:transition-all after:duration-[.4] transition-all duration-[.4] "><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+           </div>
+           <div class="w-2/4 flex lg:hidden justify-end p-4"><i class="icon-menu text-lg text-gray-400"><span>MENU</span></i></div>
+        </div>
+        <div class="row py-32 md:py-44">
+            <h3 class="text-blue-600 w-full text-center text-xl font-bold mt-2">Hey!  I AM</h3>
+            <h1 class=" w-full text-3xl md:text-6xl font-bold text-center mt-4">Nasim Pirghollo</h1>
+            <div class="row justify-center mt-5">
+                <h4 class="text-2xl md:text-4xl font-bold px-1 text-center">I'm a </h4>
+                <h4 class="text-[#3e64ff] text-2xl md:text-4xl font-bold underline text-center" id="demo"></h4>
+                <script>
+                    const names = [' Web Designer.', ' Developer.']
+            
+                    // console.log(names[50].length);
+                    let demo = document.getElementById('demo')
+                    let i = 1
+                    let x = ''
+                    let k = 0
+            
+                    let num = 0
+                    function setName() {
+                        console.log(num);
+                        x = names[num]
+                        k = x.length
+                        if (num < names.length-1) {
+                            num++
+                        } else {
+                            num = 0
+                        }
+                    }
+                    // debugger
+                    setName()
+            
+                    const myWrite = () => {
+                        if (i <= x.length) {
+                            demo.innerHTML = x.slice(0, i)
+                            i++
+                        } else {
+                            if (k >= 0) {
+                                demo.innerHTML = x.slice(0, k)
+                                k--
+                            } else {
+                                console.log('salam');
+                                i = 1
+                                setName()
+                                // k = x.length
+            
+                            }
+                        }
+                    }
+            
+                    setInterval(myWrite, 100);
+            
+                </script>
+            </div>
+            <did class="row justify-center mt-14">
+               <a href="#dwon">
+                <div class="w-[70px] h-[70px] bg-[#ebefff] rotate-45 flex justify-center items-center rounded-sm "><i class="text-lg text-blue-600 icon-down rotate-[-45deg]"></i></div>
+               </a>
+            </div>
+        </div>
+      </header>
+      <section class="row justify-center">
+        <div class="w-full lg:w-[70%] ">
+            <div class="row">
+                <div class="w-full p-8 lg:p-0 lg:w-1/2">
+                    <figure class="w-full h-full"><img class="w-full h-full object-cover" src="src/img/d5.jpg" alt=""></figure>
+                </div>
+            <div class="w-full lg:w-1/2" id="about">
+                <div class="px-12 mt-16">
+                    <h3 class="font-bold text-5xl">About me</h3>
+                    <h4 class="text-lg font-semibold mt-10">Name: <span class="text-gray-400 px-4">Nasim Pirghollo</span></h4>
+                    <h4 class="text-lg font-semibold mt-4">Date of birth: <span class="text-gray-400 px-2">May 31,2001</span></h4>
+                    <h4 class="text-lg font-semibold mt-4">education: <span class="text-gray-400 px-2">software engineering</span></h4>
+                    <h4 class="text-lg font-semibold mt-4">Email: <span class="text-gray-400 px-2">nasimpirqllw@gmail.com</span></h4>
+                    <h4 class="text-lg font-semibold mt-4">Address: <span class="text-gray-400 px-2">Tehran ,IRAN</span></h4>
+                    <h4 class="text-lg font-semibold mt-4">Phone: <span class="text-gray-400 px-2">0902****032</span></h4>
+                    <p class="text-lg font-bold mt-8"><span class="text-blue-600">15</span> Project Complete</p>
+                   <div class="w-[150px] h-[50px] bg-blue-600 mt-10 rounded-[40px]"><a class="text-white items-center justify-center hover:text-black transition-all duration-[.4] flex w-full h-full" href="">DOWNLOAD CV</a></div>
+                </div>
+            </div>
+            </div>
+        </div>
+      </section>
+      <!-- end sec1 -->
+      <section class="row justify-center md:mt-8 mt-3">
+       <div class="w-full flex flex-wrap lg:w-[70%]">
+        <aside class="w-full md:w-[30%] p-4 md:p-2">
+            <div class=" w-full h-[70px] sticky top-0">
+                <div class="mt-20 row items-center">
+                    <p class="text-white hidden md:flex">Lorem ipsum dolor sit.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, delectus! Lorem ipsum dolor sit amet.</p>
+                    <a class=" w-full font-semibold text-blue-600 px-2 text-2xl" href=""> - Education</a>
+                    <a class=" w-full font-semibold text-blue-600 px-2 text-2xl" href=""> -Skills</a>
+                </div>
+            </div>
+           </aside>
+           <section class="w-full md:w-[70%] md:mt-8 mt-3 p-4 md:p-2" id="resume">
+                <h3 class="text-4xl text-blue-600 font-bold mt-4">Education</h3>
+                <div class="mt-10">
+                    <p class="text-blue-600 font-semibold">2018-2022</p>
+                    <h4 class="text-2xl font-bold">Computer Engineer</h4>
+                    <p>Abrar University</p>
+                </div>
+                <div class="mt-10">
+                    <p class=" text-blue-600 font-semibold mt-2">2023-2024</p>
+                    <h4 class="text-2xl font-bold">Front-End Programmer</h4>
+                    <p>Parnian Institute</p>
+                </div>
+                <h3 class="text-4xl text-blue-600 pt-5 font-bold mt-14 border-t-2 border-t-inherit">Skills</h3>
+                <div class="row">
+                    <div class="w-full md:w-1/2 mt-8 p-2">
+                       <div class="row">
+                        <h3 class="font-bold">HTML5</h3>
+                        <p class="px-24 font-bold">95%</p>
+                       </div>
+                       <div class="w-full h-[8px] rounded-sm bg-gray-300 mt-4">
+                        <div class="w-[95%] h-full rounded-sm bg-blue-600"></div>
+                       </div>
+                    </div>
+                    <div class="w-full md:w-1/2 mt-8 p-2">
+                        <div class="row">
+                         <h3 class="font-bold">CSS3</h3>
+                         <p class="px-24 font-bold">90%</p>
+                        </div>
+                        <div class="w-full h-[8px] rounded-sm bg-gray-300 mt-4">
+                         <div class="w-[90%] h-full rounded-sm bg-blue-600"></div>
+                        </div>
+                     </div>
+                     <div class="w-full md:w-1/2 mt-8 p-2">
+                        <div class="row">
+                         <h3 class="font-bold">Bootstrap</h3>
+                         <p class="px-24 font-bold">80%</p>
+                        </div>
+                        <div class="w-full h-[8px] rounded-sm bg-gray-300 mt-4">
+                         <div class="w-[80%] h-full rounded-sm bg-blue-600"></div>
+                        </div>
+                     </div>
+                     <div class="w-full md:w-1/2 mt-8 p-2">
+                        <div class="row">
+                         <h3 class="font-bold">Tailwind</h3>
+                         <p class="px-24 font-bold">85%</p>
+                        </div>
+                        <div class="w-full h-[8px] rounded-sm bg-gray-300 mt-4">
+                         <div class="w-[85%] h-full rounded-sm bg-blue-600"></div>
+                        </div>
+                     </div>
+                     <div class="w-full md:w-1/2 mt-8 p-2">
+                        <div class="row">
+                         <h3 class="font-bold">SEO</h3>
+                         <p class="px-24 font-bold">65%</p>
+                        </div>
+                        <div class="w-full h-[8px] rounded-sm bg-gray-300 mt-4">
+                         <div class="w-[65%] h-full rounded-sm bg-blue-600"></div>
+                        </div>
+                     </div>
+                     <div class="w-full md:w-1/2 mt-8 p-2">
+                        <div class="row">
+                         <h3 class="font-bold">PHP</h3>
+                         <p class="px-24 font-bold">55%</p>
+                        </div>
+                        <div class="w-full h-[8px] rounded-sm bg-gray-300 mt-4">
+                         <div class="w-[55%] h-full rounded-sm bg-blue-600"></div>
+                        </div>
+                     </div>
+                   
+                </div>
+                
+           </section>
+       </div>
+      </section>
+      <!-- end sec2 -->
+      <section class="row justify-center mt-12 md:mt-36" id="project">
+        <h2 class="text-center text-5xl font-bold w-full">MY Projects</h2>
+        <div class="w-[80%] border mt-16">
+            <div class="row">
+                <div class="w-full lg:w-1/3 border-[1px] border-black">
+                    <figure class="w-full relative before:absolute before:content-[''] before:w-full group before:h-0 before:hover:h-full before:bg-[#4040eed0] transition-all duration-[.4]">
+                        <img class=" object-cover w-full h-full" src="src/img/1.png" alt="">
+                        <div class=" transition-all duration-[.4] absolute top-[40%] left-0 w-full text-center flex flex-wrap justify-center items-center opacity-0 group-hover:opacity-[100] group-hover:visible invisible">
+                            <h3 class="w-full font-semibold text-center text-xl text-white">project by Tailwind</h3>
+                           <a href="https://github.com/Nasim1380p/project-Tailwind2"> <p class="w-full text-center text-lg text-white underline">see more</p></a>
+                           
+                        </div>
+                    </figure>
+                </div>
+                <div class="w-full lg:w-1/3 border-[1px] border-black">
+                    <figure class="w-full relative before:absolute before:content-[''] before:w-full group before:h-0 before:hover:h-full before:bg-[#4040eed0] transition-all duration-[.4]">
+                        <img class=" object-cover w-full h-full" src="src/img/3.png" alt="">
+                        <div class=" transition-all duration-[.4] absolute top-[40%] left-0 w-full text-center flex flex-wrap justify-center items-center opacity-0 group-hover:opacity-[100] group-hover:visible invisible">
+                            <h3 class="w-full font-bold text-center text-xl text-white">project by Bootstrap</h3>
+                            <a href="https://github.com/Nasim1380p/project5-bootstrap"> <p class="w-full text-center text-lg text-white underline">see more</p></a>
+                           
+                        </div>
+                    </figure>
+                </div>
+                <div class="w-full lg:w-1/3 border-[1px] border-black">
+                    <figure class="w-full relative before:absolute before:content-[''] before:w-full group before:h-0 before:hover:h-full before:bg-[#4040eed0] transition-all duration-[.4]">
+                        <img class=" object-cover w-full h-full" src="src/img/2.png" alt="">
+                        <div class=" transition-all duration-[.4] absolute top-[40%] left-0 w-full text-center flex flex-wrap justify-center items-center opacity-0 group-hover:opacity-[100] group-hover:visible invisible">
+                            <h3 class="w-full font-bold text-center text-xl text-white">project by Tailwind</h3>
+                            <a href="https://github.com/Nasim1380p/Project-Tailwind"> <p class="w-full text-center text-lg text-white underline">see more</p></a>
+                           
+                        </div>
+                    </figure>
+                </div>
+                <div class="w-full lg:w-1/3 border-[1px] border-black">
+                    <figure class="w-full relative before:absolute before:content-[''] before:w-full group before:h-0 before:hover:h-full before:bg-[#4040eed0] transition-all duration-[.4]">
+                        <img class=" object-cover w-full h-full" src="src/img/4.png" alt="">
+                        <div class=" transition-all duration-[.4] absolute top-[40%] left-0 w-full text-center flex flex-wrap justify-center items-center opacity-0 group-hover:opacity-[100] group-hover:visible invisible">
+                            <h3 class="w-full font-bold text-center text-xl text-white">project by Sass</h3>
+                            <a href="https://github.com/Nasim1380p/project4-template"> <p class="w-full text-center text-lg text-white underline">see more</p></a>
+                           
+                        </div>
+                    </figure>
+                </div>
+                <div class="w-full lg:w-1/3 border-[1px] border-black">
+                    <figure class="w-full relative before:absolute before:content-[''] before:w-full group before:h-0 before:hover:h-full before:bg-[#4040eed0] transition-all duration-[.4]">
+                        <img class=" object-cover w-full h-full" src="src/img/5.png" alt="">
+                        <div class=" transition-all duration-[.4] absolute top-[40%] left-0 w-full text-center flex flex-wrap justify-center items-center opacity-0 group-hover:opacity-[100] group-hover:visible invisible">
+                            <h3 class="w-full font-bold text-center text-xl text-white">project by Css</h3>
+                            <a href="https://github.com/Nasim1380p/project3-template"> <p class="w-full text-center text-lg text-white underline">see more</p></a>
+                           
+                        </div>
+                    </figure>
+                </div>
+                <div class="w-full lg:w-1/3 border-[1px] border-black">
+                    <figure class="w-full relative before:absolute before:content-[''] before:w-full group before:h-0 before:hover:h-full before:bg-[#4040eed0] transition-all duration-[.4]">
+                        <img class=" object-cover w-full h-full" src="src/img/6.png" alt="">
+                        <div class=" transition-all duration-[.4] absolute top-[40%] left-0 w-full text-center flex flex-wrap justify-center items-center opacity-0 group-hover:opacity-[100] group-hover:visible invisible">
+                            <h3 class="w-full font-bold text-center text-xl text-white">project by flex</h3>
+                            <a href="https://github.com/Nasim1380p/first"> <p class="w-full text-center text-lg text-white underline">see more</p></a>
+                           
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- end sec3 -->
+      <section class="w-full mt-24" id="contact">
+       <div class="row justify-center">
+        <h2 class="w-full text-center text-5xl font-bold">Contact Me</h2>
+        <div class="w-[80%]">
+            <div class="row mt-20">
+                <div class="w-full md:w-1/2 lg:w-1/4 p-4">
+                    <div class="row p-10 justify-center shadow-2xl">
+                       <div class="w-[100px] h-[100px] flex justify-center items-center rounded-[50%] bg-blue-600"> <i class="icon-github-circled text-5xl hover:text-black transition-all duration-500 text-white"></i></div>
+                       <p class="w-full text-center font-bold text-xl mt-8">Github</p>
+                        <a class="w-full text-blue-600 font-semibold  text-center mt-5" href="https://github.com/Nasim1380p">see link</a>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/4 p-4">
+                    <div class="row p-10 justify-center shadow-2xl">
+                       <div class="w-[100px] h-[100px] flex justify-center items-center rounded-[50%] bg-blue-600"> <i class="icon-twitter-bird text-5xl hover:text-black transition-all duration-500 text-white"></i></div>
+                       <p class="w-full text-center font-bold text-xl mt-8">Linkedin</p>
+                        <a class="w-full text-blue-600 font-semibold  text-center mt-5" href="https://www.linkedin.com/in/nasim-pirghollo-a783952a9/">see link</a>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/4 p-4">
+                    <div class="row p-10 justify-center shadow-2xl">
+                       <div class="w-[100px] h-[100px] flex justify-center items-center rounded-[50%] bg-blue-600"> <i class="icon-instagram-1 text-5xl hover:text-black transition-all duration-500 text-white"></i></div>
+                       <p class="w-full text-center font-bold text-xl mt-8">Instagram </p>
+                        <a class=" text-blue-600 font-semibold  text-center mt-5" href="https://www.instagram.com/nasim_pirghollo_web?igsh=ZTM4ZDRiNzUwMw==">see link</a>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/4 p-4">
+                    <div class="row p-10 justify-center shadow-2xl">
+                       <div class="w-[100px] h-[100px] flex justify-center items-center rounded-[50%] bg-blue-600"> <i class="icon-mail-alt text-5xl hover:text-black transition-all duration-500 text-white"></i></div>
+                       <p class="w-full text-center font-bold text-xl mt-8">Email</p>
+                        <a class=" text-blue-600 font-semibold  text-center mt-5" href="nasimpirqllw@gmail.com">see link</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+       </div>
+      </section>
+      <!-- end sec4 -->
+      <section class="row justify-center mt-20">
+        <div class="w-[70%]">
+            <div class="row borde">
+                <div class="w-full md:w-1/2">
+                    <figure class="w-full h-full"><img class="w-full h-full object-cover" src="src/img/me.jpg" alt=""></figure>
+                </div>
+                <div class="row justify-center items-center md:w-1/2 bg-[#f8f9fa]">
+                 <div class="w-[75%]">
+                     <form action="" class="py-12">
+                         <input class="w-full p-3 mt-3 border" type="text" placeholder="Your Name">
+                         <input class="w-full p-3 mt-3 border" type="text" placeholder="Your Email">
+                         <input class="w-full p-3 mt-3 border" type="text" placeholder="Subject">
+                         <input class="w-full p-3 mt-3 border h-[100px]" type="text" placeholder="Message">
+                         <button class="w-[170px] h-[50px] text-md bg-blue-600 text-white hover:text-black mt-10 rounded-3xl transition-all duration-500">SEND MESSAGE</button>
+                     </form>
+                 </div>
+                </div>
+         </div>
+        </div>
+    </section>
+     <footer class="w-full bg-slate-300 p-3 " id="dwon">
+           <div class=" text-center">Thank you for looking</div>
+     </footer>
+     
+    </main>
+</body>
+</html>
