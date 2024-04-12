@@ -1,5 +1,5 @@
 # project-Personal-website
-- [Demo Project](https://nasim1380p.github.io/project5-bootstrap/)
+- [Demo Project](https://nasim1380p.github.io/project-personal-website/)
 
   
 ![pb1](https://github.com/Nasim1380p/project5-bootstrap/assets/155636802/cc08d7c3-095b-402a-8bd6-6fd778be8fa9)
@@ -8,7 +8,6 @@
 
 
 
-![pb3](https://github.com/Nasim1380p/project5-bootstrap/assets/155636802/98e96497-42b7-4718-80f9-581d1ce6f27e)
 - 👩‍🎓 Developed by nasim pirghollo
 
 - Created - 2024-08-01
